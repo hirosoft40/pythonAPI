@@ -67,25 +67,47 @@
 # print(normalized_ppl)
 # # who_do_you_know()
 
-my_set = {1, 3, 5}
-my_dic = {'name': 'John', 'age': 23, 'grades': [13, 34, 45, 78]}
-another_dic = {1: 23, 2: 34, 3: 45}
+# my_set = {1, 3, 5}
+# my_dic = {'name': 'John', 'age': 23, 'grades': [13, 34, 45, 78]}
+# another_dic = {1: 23, 2: 34, 3: 45}
 
-lottery_player = {
-    "name": "John",
-    "numbers": (13, 45, 67, 89)
+# lottery_player = {
+#     "name": "John",
+#     "numbers": (13, 45, 67, 89)
+# }
+
+# unversities = [
+#     {
+#     'name': 'Oxford',
+#     'location': 'UK'
+# },
+#     {
+#     'name': 'MIT',
+#     'location': 'US'
+# }
+# ]
+
+# print (sum(lottery_player['numbers']))
+
+# ===class
+lottery_player_dict = {
+    'name': 'Rolf',
+    'numbers': (5, 9, 12, 3, 1, 21)
 }
 
-unversities = [
-    {
-    'name': 'Oxford',
-    'location': 'UK'
-},
-    {
-    'name': 'MIT',
-    'location': 'US'
-}
-]
 
-print (sum(lottery_player['numbers']))
+class LotteryPlayer:
+    def __init__(self, name):
+        self.name = name
+        self.numbers = (5, 9, 12, 3, 1, 21)
 
+    def total(self):
+        return sum(self.numbers)
+
+
+player = LotteryPlayer("Rolf")
+player_one = LotteryPlayer("John")
+player_two = LotteryPlayer("Hiroko")
+player_two.numbers = (2, 4, 6, 8, 10, 12, 14, 16) // replaced tuple
+print(player_one.name)
+print(player_two.numbers)
