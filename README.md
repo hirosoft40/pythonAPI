@@ -5,6 +5,7 @@ REST API with Flask and Python
 https://www.udemy.com/rest-api-flask-and-python/learn/v4/t/lecture/5960126?start=15
 
 # Purpose
+- Learn Python as backend  <br/>
 - Learn JWT <br/>
 - Learn Flask  <br/>
 
